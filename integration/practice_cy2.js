@@ -56,17 +56,6 @@ describe('Amazon.in validations before login', function() {
 
       it('to verify the search products are listed in the search results', function(){
 
-        /*let phonenumber=xxxxxxxxxxx
-        let username='balajik'
-        cy.visit('https://www.amazon.in/')
-        cy.get('[data-nav-ref="nav_ya_signin"]',{timeout:10000}).click()
-        cy.get('[type=email]').type(phonenumber)
-        cy.get('[id=continue][type=submit]').click()
-        cy.get('[id=signInSubmit]').click()
-        cy.contains('Enter your password')
-        cy.get('[type=password]').type('15071989')
-        cy.get('[id=signInSubmit]').click() */
-        
         let searchproductnamefield='sony tv 55 inch'
         let searchcontain1='sony'
         let searchcontain2=55
