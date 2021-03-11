@@ -1,6 +1,6 @@
 class amazon{
     landingscreen(){
-       cy.get('[data-nav-ref="nav_ya_signin"]')
+       cy.get('[data-nav-ref="nav_ya_signin"]').click();
        return this 
        }
 
@@ -14,7 +14,7 @@ class amazon{
            cy.get('[type=password]')
        }
        signinscreen_continue(){
-        cy.contains('Continue')
+        cy.get('[id=continue][type=submit]').click()
         return this 
        }
        
