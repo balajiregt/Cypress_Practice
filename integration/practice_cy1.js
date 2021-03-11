@@ -21,6 +21,7 @@ describe('My First Test', function() {
         cy.visit('https://example.cypress.io/commands/actions')
         cy.get('.action-email').type('fake@gmail.com').should('have.value','fake@gmail.com')
         cy.get('[id=password1]').type('Testing123')
+        cy.debug();
               })
     })
           
