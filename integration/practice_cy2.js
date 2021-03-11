@@ -16,7 +16,7 @@ describe('Amazon.in validations before login', function() {
 
     it('emaili or phone number validations for signing in', function() {
         // 
-        let phonenumber=9894592108
+        let phonenumber=xxxx
         
         cy.get('[type=email]').clear
         cy.get('[type=submit]').click()
@@ -30,7 +30,7 @@ describe('Amazon.in validations before login', function() {
     describe ('Amazon.in validations after login',function(){
       beforeEach (function() {
       
-        let phonenumber=9894592108
+        let phonenumber=xxxx
         let username='balajik'
         cy.visit('https://www.amazon.in/')
         cy.get('[data-nav-ref="nav_ya_signin"]',{timeout:10000}).click()
@@ -38,7 +38,7 @@ describe('Amazon.in validations before login', function() {
         cy.get('[id=continue][type=submit]').click()
         cy.get('[id=signInSubmit]').click()
         cy.contains('Enter your password')
-        cy.get('[type=password]').type('15071989')
+        cy.get('[type=password]').type('xxxx')
         cy.get('[id=signInSubmit]').click()
       })
       it('to confirm the expected username and the cart value', function(){
